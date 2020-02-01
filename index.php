@@ -16,7 +16,7 @@
            $Genre = $data->getElementsByTagName("Genre")->item(0)->nodeValue;
            $Cost = $data->getElementsByTagName("Cost")->item(0)->nodeValue;
            $Rate = $data->getElementsByTagName("Rate")->item(0)->nodeValue;
-           echo "<ul><h2>$Namer</h2>
+           echo "<ul><h2>$Name</h2>
                     <ul>
                         <li>Genre: $Genre </li>
                         <li>Cost: $Cost</li>
