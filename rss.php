@@ -11,12 +11,12 @@
     while($r=mysqli_fetch_assoc($query)) {
         extract($r);
 
-        $rss .= '<Game>';
+        $rss .= '<Games>';
         $rss .= '<Name>' . $Game_Name . '</Name>';
         $rss .= '<Genre>' . $Game_Genre . '</Genre>';
         $rss .= '<Cost>' . $Game_Cost . '</Cost>';
         $rss .= '<Rate>' . $Game_Rate . '</Rate>';
-        $rss .= '</Game>';
+        $rss .= '</Games>';
     }
 
     $rss .= '</channel>';
