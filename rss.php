@@ -8,8 +8,8 @@
     $sql = "SELECT * FROM tbl_games";
     $query = mysqli_query($connect,$sql) or die (mysqli_error($connect));
 
-    while($r= mysqli_fetch_assoc($query)) {
-        extract ($r);
+    while($r=mysqli_fetch_assoc($query)) {
+        extract($r);
 
         $rss .= '<Game>';
         $rss .= '<Name>' . $Game_Name . '</Name>';
