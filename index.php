@@ -2,7 +2,7 @@
  $domOBJ = new DOMDocument();
  $domOBJ->load("https://tan-mt-exercise-1-xml.herokuapp.com/rss.php");//XML page URL
  
- $content = $domOBJ->getElementsByTagName("game");
+ $content = $domOBJ->getElementsByTagName("Game");
  
  ?>
  <ul>
