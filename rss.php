@@ -5,17 +5,18 @@
     $rss .= '<channel>';
 
     $connect = mysqli_connect("dbrojasdev.cjw42bnplsor.us-east-1.rds.amazonaws.com", "admin", "root1234", "db_1820422") or die (mysqli_error($connect));
-    $sql = "SELECT * FROM tbl_games ORDER BY Game_ID ASC;";
+    $sql = "SELECT * FROM tbl_games";
     $query = mysqli_query($connect,$sql) or die (mysqli_error($connect));
-    while($records= mysqli_fetch_assoc($query)) {
-        extract ($records);
 
-        $rss .= '<game>';
-        $rss .= '<name>' . $Game_Name . '</name>';
-        $rss .= '<type>' . $Game_Genre . '</brand>';
-        $rss .= '<cost>' . $Game_Cost . '</type>';
-        $rss .= '<rate>' . $Game_Rate . '</cost>';
-        $rss .= '</game>';
+    while($r= mysqli_fetch_assoc($query)) {
+        extract ($r);
+
+        $rss .= '<Game>';
+        $rss .= '<Name>' . $Game_Name . '</Name>';
+        $rss .= '<Genre>' . $Game_Genre . '</Genre>';
+        $rss .= '<Cost>' . $Game_Cost . '</Cost>';
+        $rss .= '<Rate>' . $Game_Rate . '</Rate>';
+        $rss .= '</Game>';
     }
 
     $rss .= '</channel>';
