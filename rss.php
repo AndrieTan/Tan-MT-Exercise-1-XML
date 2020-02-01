@@ -1,4 +1,4 @@
-  <?php
+ <?php
 
     $rss = '<?xml version="1.0" encoding="UTF-8"?>';
     $rss .= '<rss version="2.0">';
