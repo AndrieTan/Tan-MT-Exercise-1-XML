@@ -6,7 +6,7 @@
 ?>
     
        
-       <h1>Monsters</h1>
+       <h1>Games</h1>
            
        
         <?php
