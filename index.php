@@ -3,25 +3,21 @@
  $domOBJ->load("https://tan-mt-exercise-1-xml.herokuapp.com/rss.php");//XML page URL
  
  $content = $domOBJ->getElementsByTagName("Game");
- 
  ?>
- <ul>
+<h1> Games </h1>
     <?php
  foreach($content as $data)
  {
-   $name = $data->getElementsByTagName("Game_Name")->item(0)->nodeValue;
-   $genre = $data->getElementsByTagName("Game_Genre")->item(0)->nodeValue;
-   $cost = $data->getElementsByTagName("Game_Cost")->item(0)->nodeValue;
-   $rate= $data->getElementsByTagName("Game_Rate")->item(0)->nodeValue;
-   
-  
-   echo "<li>$name 
+   $Game_Name = $data->getElementsByTagName("Game_Name")->item(0)->nodeValue;
+   $Game_Genre = $data->getElementsByTagName("Game_Genre")->item(0)->nodeValue;
+   $Game_Cost = $data->getElementsByTagName("Game_Cost")->item(0)->nodeValue;
+   $Game_Rate= $data->getElementsByTagName("Game_Rate")->item(0)->nodeValue;
+   echo "<ul><h2>$Game_Name</h2> 
             <ul>
-                <li>Genre: $genre</li>
-		<li>Cost: $cost</li>
-		<li>Rating: $rate</li>
+                <li>Genre: $Game_Genre</li>
+		<li>Cost: $Game_Cost</li>
+		<li>Rating: $Game_Rate</li>
             </ul>
-        </li>";
+        </ul>";
  }
 ?>
-</ul>
