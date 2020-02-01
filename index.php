@@ -9,17 +9,17 @@
     <?php
  foreach( $content as $data )
  {
-   $name = $data->getElementsByTagName("name")->item(0)->nodeValue;
-   $type = $data->getElementsByTagName("type")->item(0)->nodeValue;
-   $cost = $data->getElementsByTagName("cost")->item(0)->nodeValue;
-   $rate= $data->getElementsByTagName("rate")->item(0)->nodeValue;
+   $name = $data->getElementsByTagName("Game_Name")->item(0)->nodeValue;
+   $genre = $data->getElementsByTagName("Game_Genre")->item(0)->nodeValue;
+   $cost = $data->getElementsByTagName("Game_Cost")->item(0)->nodeValue;
+   $rate= $data->getElementsByTagName("Game_Rate")->item(0)->nodeValue;
    
   
    echo "<li>$name 
             <ul>
-                <li>type: $type</li>
-		<li>cost: $cost</li>
-		<li>rate: $rate</li>
+                <li>Genre: $genre</li>
+		<li>Cost: $cost</li>
+		<li>Rating: $rate</li>
             </ul>
         </li>";
  }
