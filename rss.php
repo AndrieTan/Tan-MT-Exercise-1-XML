@@ -12,10 +12,10 @@
         extract($r);
 
         $rss .= '<Games>';
-        $rss .= '<Name>' . $Game_Name . '</Name>';
-        $rss .= '<Genre>' . $Game_Genre . '</Genre>';
-        $rss .= '<Cost>' . $Game_Cost . '</Cost>';
-        $rss .= '<Rate>' . $Game_Rate . '</Rate>';
+        $rss .= '<Name>' . $Name . '</Name>';
+        $rss .= '<Genre>' . $Genre . '</Genre>';
+        $rss .= '<Cost>' . $Cost . '</Cost>';
+        $rss .= '<Rate>' . $Rate . '</Rate>';
         $rss .= '</Games>';
     }
 
