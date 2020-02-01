@@ -7,7 +7,7 @@
  ?>
  <ul>
     <?php
- foreach( $content as $data )
+ foreach($content as $data)
  {
    $name = $data->getElementsByTagName("Game_Name")->item(0)->nodeValue;
    $genre = $data->getElementsByTagName("Game_Genre")->item(0)->nodeValue;
