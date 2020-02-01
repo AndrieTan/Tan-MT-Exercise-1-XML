@@ -10,7 +10,7 @@
            
        
         <?php
-              foreach($content->entry as $data)
+              foreach($content as $data)
         {          
            $Name = $data->getElementsByTagName("Name")->item(0)->nodeValue;
            $Genre = $data->getElementsByTagName("Genre")->item(0)->nodeValue;
@@ -26,4 +26,3 @@
                 </ul>";
               }
 ?>
-    
