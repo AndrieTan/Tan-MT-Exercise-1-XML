@@ -20,7 +20,7 @@
                     <ul>
                         <li>Genre: $Genre </li>
                         <li>Cost: $Cost</li>
-                        <li>Rate: $Rate</li>
+                        <li>Rate: $Rating</li>
                         
                     </ul>
                 </ul>";
